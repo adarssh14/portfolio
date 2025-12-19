@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<meta name="description" content="Deepanjal Singh – Professional Web Developer creating modern, responsive and attractive websites for businesses.">
+<meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, Portfolio Website">
+<meta name="author" content="Deepanjal Singh">
+
+<title>Deepanjal Singh | Web Developer</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0b1120;
+  color:#e5e7eb;
+  scroll-behavior:smooth;
+}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:3.2rem;
+}
+.hero span{color:#38bdf8;}
+.hero p{
+  max-width:650px;
+  margin:20px auto;
+  color:#dbeafe;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 36px;
+  background:#38bdf8;
+  color:#020617;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05);}
+
+/* SECTION */
+section{
+  padding:90px 10%;
+}
+
+h2{
+  text-align:center;
+  font-size:2.4rem;
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+.quote{
+  text-align:center;
+  font-style:italic;
+  color:#c7d2fe;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.06);
+  border-radius:22px;
+  overflow:hidden;
+  backdrop-filter:blur(10px);
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.card-content{
+  padding:25px;
+  text-align:center;
+}
+
+.price{
+  font-size:2.2rem;
+  color:#38bdf8;
+  margin:15px 0;
+}
+
+/* PROJECT SECTION BG */
+.project{
+  background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1556761175-4b46a572b786');
+  background-size:cover;
+}
+
+/* CONTACT */
+.contact{
+  background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+  background-size:cover;
+  text-align:center;
+}
+
+form{
+  max-width:500px;
+  margin:30px auto;
+}
+input, textarea{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
+}
+button{
+  width:100%;
+  padding:14px;
+  background:#38bdf8;
+  color:#020617;
+  border:none;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  text-align:center;
+  padding:18px;
+  color:#94a3b8;
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:2.3rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>I Build <span>Web Experiences</span></h1>
+    <p>“Good design is obvious. Great design is transparent.”</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="reveal">
+  <h2>About Me</h2>
+  <p class="quote">Turning ideas into high-impact websites 🚀</p>
+  <p style="max-width:850px;margin:auto;text-align:center;">
+    I’m Deepanjal Singh, a web developer creating modern,
+    responsive and visually appealing websites for businesses,
+    restaurants and startups.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="reveal">
+  <h2>Skills</h2>
+  <p class="quote">Clean code • Smooth animations • Professional UI</p>
+  <div class="grid">
+    <div class="card"><div class="card-content">HTML5</div></div>
+    <div class="card"><div class="card-content">CSS3 & Animations</div></div>
+    <div class="card"><div class="card-content">JavaScript (Basic)</div></div>
+    <div class="card"><div class="card-content">Responsive Design</div></div>
+    <div class="card"><div class="card-content">Landing Pages</div></div>
+    <div class="card"><div class="card-content">Domain & Hosting</div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="project reveal">
+  <h2>Projects</h2>
+  <p class="quote">Design that speaks. Code that performs.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+      <div class="card-content">
+        <h3>Restaurant Website</h3>
+        <p>Menu, contact, location & modern UI.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+      <div class="card-content">
+        <h3>Business Website</h3>
+        <p>Professional one-page conversion focused site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="reveal">
+  <h2>Pricing</h2>
+  <p class="quote">Premium look at beginner-friendly pricing 💼</p>
+  <div class="grid">
+    <div class="card"><div class="card-content"><h3>Basic</h3><p class="price">₹1500</p><p>1 Page • Responsive</p></div></div>
+    <div class="card"><div class="card-content"><h3>Standard</h3><p class="price">₹3000</p><p>Up to 3 Pages • JS</p></div></div>
+    <div class="card"><div class="card-content"><h3>Custom</h3><p class="price">Quote</p><p>Advanced UI</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <p class="quote">Let’s build something amazing together ✨</p>
+
+  <form action="mailto:htmlworld0001@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>📞 6307010664 | 7084713944</p>
+</section>
+
+<a href="https://wa.me/916307010664" class="whatsapp" target="_blank">WhatsApp Me</a>
+
+<footer>
+  © 2025 Deepanjal Singh | Web Developer
+</footer>
+
+<!-- SCROLL ANIMATION JS -->
+<script>
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+  reveals.forEach(r=>{
+    const top=r.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      r.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
